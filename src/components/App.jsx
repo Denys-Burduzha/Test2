@@ -8,17 +8,24 @@ import {GiphDetails} from "./GiphsDetails/GiphsDetails"
  const App = () => {
   return (
     <div className="App">
-    
-
-     <Routes>
-        <Route path="/" element={<Layout />}>
-           <Route index element={<Home />} />
-           <Route path="giphs" element={<GiphsSearch />}></Route>
-           <Route path="giphs/:giphId" element={<GiphDetails />} />
-        </Route>
-     </Routes>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="giphs" element={<GiphsSearch />}></Route>
+          <Route path="giphs/:giphId" element={<GiphDetails />} />
+      </Route>
+    </Routes>
     </div>
   );
 };
 
 export default App;
+
+
+// {/* <Routes></Routes>
+//         <Route path="/" element={<Layout />}></Route>
+//            <Route index element={<Home />} />
+//            <Route path="giphs" element={<GiphsSearch />}></Route>
+//            <Route path="giphs/:giphId" element={<GiphDetails />} />
+//         </Route>
+//      </Routes> */}

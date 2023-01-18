@@ -1,6 +1,6 @@
 
 
-const GIPHY_API_KEY = "ztJafTybZL63Whc9upV14MuR6yVt4yBE";
+const GIPHY_API_KEY = "6DyUTT4w1NZvvZh3JvOUlR4XPwFeiTG4";
 
 export const getTrendingGiphs = () => {
     const queryParams = new URLSearchParams({
@@ -33,3 +33,6 @@ export const getGiphsByQuery = (q) => {
 };
 
 export const searchGiphs = () => {};
+
+
+// ztJafTybZL63Whc9upV14MuR6yVt4yBE
