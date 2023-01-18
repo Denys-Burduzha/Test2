@@ -35,4 +35,3 @@ export const getGiphsByQuery = (q) => {
 export const searchGiphs = () => {};
 
 
-// ztJafTybZL63Whc9upV14MuR6yVt4yBE

@@ -6,7 +6,7 @@ import {useNavigate, useParams} from "react-router-dom";
 import * as GiphyAPI from "../../Api/Giphy";
 import { Outlet } from "react-router-dom";
 
-export const GiphDetails = () => {
+const GiphDetails = () => {
     const {giphId} = useParams();
     const navigate = useNavigate();
     const [giphDetails, setGiphDetails] = useState();
@@ -17,7 +17,6 @@ export const GiphDetails = () => {
         GiphyAPI.getGiphById(giphId).then(setGiphDetails)
     }, [giphId]);
 
-    console.log(giphDetails);
 
     if (!giphDetails) {
         return null;
@@ -44,3 +43,5 @@ export const GiphDetails = () => {
         </>
     );
 };
+
+export default GiphDetails;
