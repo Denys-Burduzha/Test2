@@ -1,29 +1,33 @@
-import { useEffect, useState } from "react"
-import * as GiphyAPI from "../../Api/Giphy";
-import { Link } from "react-router-dom";
+// import { useEffect, useState } from "react"
+// import * as GiphyAPI from "../../Api/Giphy";
+// import { Link } from "react-router-dom";
 
-export const Home = () => {
+// export const Home = () => {
 
-    const [trendingGiphs, setTrendingGiphs] = useState([]);
+//     const [trendingGiphs, setTrendingGiphs] = useState([]);
 
-    useEffect(() => {
-        GiphyAPI.getTrendingGiphs().then( setTrendingGiphs)
-    }, []);
+//     useEffect(() => {
+//         GiphyAPI.getTrendingGiphs().then( setTrendingGiphs)
+//     }, []);
 
-    return (
-        <>
-        <ul>
-            {trendingGiphs.map((trendingGiph) => (
-                <li key={trendingGiph.id}>
-                    <Link to={`/giphs/${trendingGiph.id}`}>{trendingGiph.title}</Link>
+//     return (
+//         <>
+//         <ul>
+//             {trendingGiphs.map((trendingGiph) => (
+//                 <li key={trendingGiph.id}>
+//                     <Link to={`/giphs/${trendingGiph.id}`}>{trendingGiph.title}</Link>
                    
-                </li>
-            ))}
-        </ul>
-    </>
+//                 </li>
+//             ))}
+//         </ul>
+//     </>
      
-    );
-};
+//     );
+// };
+// ===============================
+// =================================
+
+
 
 // {/* <>
 // <ul>
